@@ -259,3 +259,121 @@ select {
     transform: translateY(-12px) translateX(-5px) scale(0.95);
     transition: 0.3s ease-in-out;
   }
+
+
+  /*** Carousel de  **/
+  .carousel-wrapper {
+    border-radius: 10px;
+    padding: 1rem;
+   
+    
+  }
+  
+  .logo-carousel {
+    animation: scrollLeft 30s linear infinite;
+    gap: 3rem;
+  }
+  
+  .logo-item {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 60px;
+  }
+  
+  .logo-item img {
+    width: 339px;
+    max-height: 70px;
+    max-width: 100%;
+    object-fit: contain;
+    transition: filter 0.3s;
+  }
+  .logo-item img:hover {
+    filter: grayscale(0%);
+  }
+  
+  @keyframes scrollLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+
+
+  /* Donciones  */
+  .donation-fixed {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #ffc107;
+    color: #000;
+    font-size: 1.8rem;
+    padding: 14px 18px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    box-shadow: -2px 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    transition: all 0.3s ease;
+  }
+  
+  .donation-fixed:hover {
+    background-color: #e0a800;
+    color: #fff;
+  }
+  
+
+  .donation-icon{
+    width: 30px;
+  }
+
+  .github-icon{
+    width: 30px;
+  }
+
+
+/* Estilo general de los íconos flotantes */
+.floating-box {
+  position: fixed;
+  right: 0;
+  padding: 10px 15px;
+  background-color: #ffc107;
+  color: #000;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+/* Hover animado */
+.floating-box:hover {
+  background-color: #e0a800;
+  color: #000;
+  transform: translateX(-5px);
+}
+
+/* Posiciones individuales */
+.floating-box.donation {
+  top: 45%;
+}
+
+.floating-box.github {
+  top: calc(45% + 60px);
+}
+
+/* Ícono dentro */
+.floating-box i {
+  font-size: 1.2rem;
+}

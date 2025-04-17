@@ -29,24 +29,24 @@
 
             <!-- Parte derecha -->
             <div class="d-flex align-items-center gap-3">
-
-                <!-- Íconos redes -->
-                <a href="https://github.com/tuusuario" target="_blank" class="text-white fs-4"><i
-                        class="bi bi-github"></i></a>
-
-                <a href="https://instagram.com/tuusuario" target="_blank" class="text-white fs-4"><i
-                        class="bi bi-instagram"></i></a>
-
-
-                </i></a>
+                <div>
+                    <div class="toggle-switch">
+                        <label class="switch-label m-0">
+                            <input type="checkbox" class="checkbox" id="themeToggle">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
             </div>
         </div>
 
     </nav>
 
+    
 
 
-    <div class="container mb-5 mt-5 ">
+
+    <div class="container  mt-5 ">
         <div id="dolar-title-container"></div>
         <div class="mb-4 p-3  text-white rounded" id="dolar-section">
             <div id="dolar-prices" class="mb-4"></div>
@@ -78,6 +78,9 @@
     </div>
 
 
+    
+      
+
 
 
     <div class="container crypto-section" id="crypto-section">
@@ -87,14 +90,65 @@
         <div id="crypto-prices" class="row g-3"></div>
     </div>
 
-    <div class="theme-toggle-fixed">
-        <div class="toggle-switch">
-            <label class="switch-label m-0">
-                <input type="checkbox" class="checkbox" id="themeToggle">
-                <span class="slider"></span>
-            </label>
-        </div>
+    
+
+    <!--Carousel-->
+    <div class="d-flex justify-content-center align-items-center ">
+        <div class="container my-5 d-flex justify-content-center align-items-center flex-column mb-5 ">
+            <div class="carousel-wrapper overflow-hidden">
+              <div class="logo-carousel d-flex">
+                <!-- Repite según tus logos -->
+                <div class="logo-item">
+                  <img src="img/bitcoin-btc-logo-full.svg" alt="Bitcoin" />
+                </div>
+                <div class="logo-item">
+                  <img src="img/ethereum-eth-logo-full-horizontal.svg" alt="Ethereum" />
+                </div>
+                <div class="logo-item">
+                  <img src="img/tether-usdt-logo.svg" alt="USDT" />
+                </div>
+                <div class="logo-item">
+                  <img src="img/bnb-bnb-logo.svg" alt="BNB" />
+                </div>
+                <div class="logo-item">
+                  <img src="img/solana-sol-logo-horizontal.svg" alt="Solana" />
+                </div>
+                <div class="logo-item">
+                  <img src="img/tron-trx-logo-full.svg" alt="Tron" />
+                </div>
+                <div class="logo-item">
+                  <img src="img/litecoin-ltc-logo-full.svg" alt="Litecoin" />
+                </div>
+                <div class="logo-item">
+                  <img src="img/cardano-ada-logo.svg" alt="Cardano" />
+                </div>
+                <div class="logo-item">
+                  <img src="img/shiba-inu-shib-logo.svg" alt="shiba inu" />
+                </div>
+                <div class="logo-item">
+                  <img src="img/dogecoin-doge-logo.svg" alt="DOGE" /> 
+                </div>
+                <div class="logo-item">
+                  <img src="img/avalanche-avax-logo.svg" alt="ava" />        
+                </div>
+
+                <!-- Puedes agregar logos de empresas también -->
+              </div>
+            </div>
+          </div>
+
+          
     </div>
+
+    <!--Donaciones    -->
+
+    <a href="https://paypal.me/johnlennonlp?country.x=VE&locale.x=es_XC" target="_blank" class="floating-box donation" title="Haz una donación">
+        <img class="donation-icon" src="https://cdn-icons-png.flaticon.com/512/174/174861.png" alt="Paypal">
+      </a>
+
+      <a href="https://github.com/johnlennonl" target="_blank" class="floating-box github" title="Visita nuestro GitHub">
+        <img class="github-icon" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" >
+      </a>
     
 
 
