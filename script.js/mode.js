@@ -27,3 +27,24 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+
+
+
+// Mostrar el botón al hacer scroll
+window.addEventListener("scroll", () => {
+  const btn = document.getElementById("scrollTopBtn");
+  if (window.scrollY > 300) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+});
+
+// Scroll suave arriba
+document.getElementById("scrollTopBtn").addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
